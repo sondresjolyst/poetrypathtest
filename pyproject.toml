@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "poetrypackage"
+version = "0.1.0"
+description = ""
+authors = ["sondresjolyst <sonyslyst@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+test3 = {path = "test3", platform = "win32"}
+test1 = {path = "test1", platform = "linux"}
+test2 = {path = "test2", platform = "darwin"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
